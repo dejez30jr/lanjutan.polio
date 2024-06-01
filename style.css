@@ -2,7 +2,10 @@
 html,body{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
+
+
 
 :root {
     --primary-color: #a855f7;
@@ -66,14 +69,17 @@ nav ul li a:hover{
 /* tampilan utama */
 
 body{
-  background-color: rgb(35, 30, 30);
+  background-image: url(astronot.jpg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .tampilan-utama{
     justify-content: center;
     display: flex;
     min-height: 400px;
-    background-color: rgb(35, 30, 30);
+    background-image: url(astronot.jpg);
     background-size: cover;
     background-position: start;
     align-items: center;
@@ -130,7 +136,7 @@ width: 50%;
   justify-content: space-around;
   padding: 10px;
   background-color: white;
-  border-radius: 30px 30px 0px 0px;
+  border-radius: 30px 30px 30px 30px;
   height: auto;
   flex-wrap: wrap;
 }
@@ -145,7 +151,7 @@ width: 50%;
 }
 
 .card-item:last-of-type{
-  margin-bottom: 30pxs;
+  margin-bottom: 50px;
 }
 
 .img-a{
@@ -178,19 +184,113 @@ width: 50%;
   margin-left: 10px;
 }
 
+
+/* card library */
+
+.img-book{
+  width: 100%;
+}
+
+.judul{
+  text-align: center;
+  font-size: 25px;
+  font-family: "Permanent Marker", cursive;
+  flex-wrap: wrap;
+  color: white;
+  /* background-color: rgb(231, 228, 228); */
+  padding: 50px;
+}
+
+/* .box{
+  display: flex;
+  padding: 10px;
+  height: max-content;
+  overflow-x: scroll;
+} */
+
+
+.wrap{
+  background-color: white;
+  padding: 10px;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 30px 30px 30px 30px;
+}
+
+.cards{
+  width: 20%;
+  background-color: #dddcde;
+  padding: 10px;
+  box-shadow: 3px 3px 0px 0px rgb(67, 62, 62);
+  margin: 10px;
+}
+.cards:hover{
+  border: 3px solid red;
+}
+.rpl-logo{
+  display: none;
+}
+.UI{
+  margin-bottom: 10px;
+}
+.link{
+  margin-top: 10px;
+  justify-content: space-between;
+  display: flex;
+}
+
+
+
+.perbaikan{
+background-color: white;
+border-radius: 30px 30px 0px 0px;
+margin-top: 10%;
+padding: 10px;
+height: 500px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+b{
+  font-size: 30px;
+  color: red;
+}
+
+/* bhqbhqb */
+
+
+
 @media (max-width: 768px){
   .card{
     flex-wrap: wrap;
+    border-radius: 30px 30px 0px 70px;
   }
   .card-item{
     flex-wrap: wrap;
     width: 90%;
   }
   .card-item:last-of-type{
-    margin-bottom: 20px;
+    margin-bottom: 50px;
   }
-  .cookie-card{
-    
+  /* ------ */
+  .wrap{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0px 70px 30px 30px;
+  }
+  .rpl-logo{
+    width: 100%;
+    border-radius: 0px 70px 30px 30px;
+    height: 200px;
+    display: flex;
+  }
+  .cards{
+  width: auto;
+  }
+  .cards:first-of-type{
+    margin-top: 10px;
   }
   .perbaikan{
     background-color: white;
@@ -205,142 +305,4 @@ width: 50%;
       font-size: 30px;
       color: red;
     }
-}
-
-/* card library */
-
-.img-book{
-  width: 100%;
-}
-
-.judul{
-  text-align: center;
-  background-color: rgb(231, 228, 228);
-  padding: 20px;
-}
-
-.box{
-  /* background-color: #a855f7; */
-  display: flex;
-  /* width: 100%; */
-  padding: 10px;
-  height: max-content;
-  overflow-x: scroll;
-}
-
-.box::-webkit-scrollbar{
-  display: none;
-}
-
-.wrap{
-  background-color: white;
-  padding: 10px;
-  justify-content: center;
-  display: flex;
-  /* height: 100vh; */
-}
-
-.cookie-card {
-  margin: 10px;
-  max-width: 500px;
-  padding: 1rem;
-  flex-wrap: nowrap;
-  background-color: #dfe2ea;
-  border-radius: 10px;
-  box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
-}
-
-.title1 {
-  font-weight: 600;
-  color: rgb(31 41 55);
-}
-
-.description1 {
-  margin-top: 1rem;
-  flex-wrap: nowrap;
-  font-size: 0.875rem;
-  line-height: 1.25rem;
-  color: rgb(75 85 99);
-}
-
-.description a {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246);
-}
-
-.description a:hover {
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
-}
-
-.actions {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 1rem;
-  -moz-column-gap: 1rem;
-  column-gap: 1rem;
-  flex-shrink: 0;
-}
-
-.pref {
-  font-size: 0.75rem;
-  line-height: 1rem;
-  color: rgb(31 41 55 );
-  -webkit-text-decoration-line: underline;
-  text-decoration-line: underline;
-  transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
-  border: none;
-  background-color: transparent;
-}
-
-.pref:hover {
-  color: rgb(156 163 175);
-}
-
-.pref:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.accept {
-  font-size: 0.75rem;
-  line-height: 1rem;
-  background-color: rgb(17 24 39);
-  font-weight: 500;
-  border-radius: 0.5rem;
-  color: #fff;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
-  border: none;
-  transition: all .15s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-Button a{
-  color: white;
-}
-
-.accept:hover {
-  background-color: rgb(55 65 81);
-}
-
-.accept:focus {
-  outline: 2px solid transparent;
-  outline-offset: 2px;
-}
-
-.perbaikan{
-background-color: white;
-padding: 10px;
-height: 500px;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-b{
-  font-size: 30px;
-  color: red;
 }
