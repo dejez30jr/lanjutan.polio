@@ -5,6 +5,24 @@ menuIcon.addEventListener("click", ()=>{
 })
 
 
+const otodidak1 = document.getElementById("otodidak1");
+const otodidak2 = document.getElementById("otodidak2");
+const otodidak3 = document.getElementById("otodidak3");
+
+
+otodidak1.addEventListener("click", () =>{
+    alert("mohon maaf mungkin untuk semantic bisa anda cari sendiri di yt")
+})
+
+otodidak2.addEventListener("click", () =>{
+    alert("mohon maaf mungkin untuk semantic bisa anda cari sendiri di yt")
+})
+
+otodidak3.addEventListener("click", () =>{
+    alert("mungin fremework & library ini anda sudah mengerti")
+})
+
+
 
 
 
