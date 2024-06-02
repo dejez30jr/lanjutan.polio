@@ -22,8 +22,8 @@ nav{
 display: flex;
 justify-content: space-between;
 padding: 1rem 2rem;
-background-color: white;
-color: rgb(9, 9, 9);
+/* background-color: white; */
+color: rgb(255, 254, 254);
 font-size: 23px;
 }
 nav ul{
@@ -34,7 +34,7 @@ nav ul{
 }
 nav ul li a{
   text-decoration: none;
-  color: rgb(1, 0, 0);
+  color: rgb(255, 255, 255);
 }
 nav ul li a:hover{
   color: orange;
@@ -52,10 +52,16 @@ nav ul li a:hover{
     flex-wrap: wrap;
     border-radius: 0px 0px 30px 30px;
     /* width: 100%; */
+    background-color: white;
+    color: black;
   }
-  nav ul{
+  nav ul {
     flex-direction: column;
     width: 100%;
+  }
+  nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
   }
   .menu-icon{
     align-items: center;
@@ -79,7 +85,7 @@ body{
     justify-content: center;
     display: flex;
     min-height: 400px;
-    background-image: url(astronot.jpg);
+    /* background-image: url(astronot.jpg); */
     background-size: cover;
     background-position: start;
     align-items: center;
@@ -136,7 +142,7 @@ width: 50%;
   justify-content: space-around;
   padding: 10px;
   background-color: white;
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 30px 30px 0px 40px;
   height: auto;
   flex-wrap: wrap;
 }
@@ -201,6 +207,13 @@ width: 50%;
   padding: 50px;
 }
 
+.judul2{
+  width: 100%;
+  text-align: center;
+  font-family: "popins", cursive;
+  font-size: 25px;
+}
+
 /* .box{
   display: flex;
   padding: 10px;
@@ -215,7 +228,7 @@ width: 50%;
   justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 0px 40px 0px 0px;
 }
 
 .cards{
@@ -253,12 +266,40 @@ justify-content: center;
 align-items: center;
 }
 
-b{
-  font-size: 30px;
-  color: red;
-}
 
 /* bhqbhqb */
+
+.judul-pengertian:first-of-type{
+  margin-top: 20px;
+}
+
+.judul-pengertian{
+  font-family: "Popins", cursive;
+  flex-wrap: wrap; 
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 28px;
+  background-color: white;
+  align-items: end;
+  padding: 10px;
+}
+.pengertian{
+  background-color: white;
+  display: flex;
+}
+.pengertian1{
+  flex-wrap: wrap;
+  width: 50%;
+  padding: 15px;
+  /* background-color: #e7e5e8; */
+  margin: 6px;
+}
+.kinerja{
+  display: flex;
+  margin-top: 10px;
+  gap: 1rem;
+}
+
 
 
 
@@ -278,7 +319,7 @@ b{
   .wrap{
     display: flex;
     justify-content: space-around;
-    border-radius: 0px 70px 30px 30px;
+    border-radius: 0px 70px 0px 0px;
   }
   .rpl-logo{
     width: 100%;
@@ -292,17 +333,17 @@ b{
   .cards:first-of-type{
     margin-top: 10px;
   }
-  .perbaikan{
-    background-color: white;
-    padding: 10px;
-    height: 500px;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    }
+ .pengertian{
+  flex-wrap: wrap;
+ }
+ .pengertian1{
+  width: auto;
+ }
+ .judul-pengertian{
+ background-color: red;
+ color: white;
+ .judul2{
+ display: none;
+}
     
-    b{
-      font-size: 30px;
-      color: red;
-    }
 }
