@@ -6,7 +6,6 @@ html,body{
 }
 
 
-
 :root {
     --primary-color: #a855f7;
     --primary-color-dark: #9333ea;
@@ -342,8 +341,8 @@ align-items: center;
  .judul-pengertian{
  background-color: red;
  color: white;
- .judul2{
+}
+.judul2{
  display: none;
 }
-    
 }
