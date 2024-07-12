@@ -15,11 +15,11 @@ otodidak1.addEventListener("click", () =>{
 })
 
 otodidak2.addEventListener("click", () =>{
-    alert("mohon maaf mungkin untuk semantic bisa anda cari sendiri di yt")
+   swal("Mohon maaf!", "...bisa anda cari sendiri di yt");
 })
 
 otodidak3.addEventListener("click", () =>{
-    alert("mungin fremework & library ini anda sudah mengerti")
+   swal("mungkin anda sudah mengerti!", "...dan tinggal salin code doang");
 })
 
 
