@@ -11,7 +11,7 @@ const otodidak3 = document.getElementById("otodidak3");
 
 
 otodidak1.addEventListener("click", () =>{
-    alert("mohon maaf mungkin untuk semantic bisa anda cari sendiri di yt")
+   swal("Mohon maaf!", "...bisa anda cari sendiri di yt");
 })
 
 otodidak2.addEventListener("click", () =>{
