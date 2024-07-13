@@ -141,6 +141,10 @@ text-align: center;
     border-radius: 4px;
   }
 
+  .ttrl{
+      color: blue;
+  }
+
   /* card */
   
 .card{
@@ -308,7 +312,13 @@ align-items: center;
 }
 
 
-
+/* footer */
+footer{
+    text-align: center;
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
 
 @media (max-width: 768px){
   .card{
